@@ -1,0 +1,159 @@
+body {
+    background: url(Background/2048.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    margin: 0px;
+}
+
+/* bara de sus */
+header {
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    position: absolute;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-inline-start: 0px;
+    overflow: hidden;
+    background-color: #333;
+    border: 2px solid black;
+    border-radius: 1px;
+    margin-bottom: 10px;
+}
+  
+li {
+    border-right: 2px solid black;
+    float: left;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li.item {
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.active {
+    font-weight: bold;
+    background-color: #595959;
+}
+/* bara de sus */
+
+#list {
+    top : 320px;
+    left : 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+    position: absolute;
+    border-radius: 12px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #929292;
+    display: block;
+}
+
+
+.legend-row {
+    margin-top: 5px;
+    padding: 10px 10px;
+    background: #bbada0;
+    border-radius: 7px;
+    position: flexible;
+
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.legend-row:after {
+    margin-bottom: 5px;
+    content: "";
+    display: block;
+    clear: both;
+}
+
+ol {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-inline-start: 5px;
+    list-style-type: none;
+}
+
+.lista {
+    border-right: none;
+    margin-top: 5px;
+}
+
+.lista:after {
+    content: "";
+    display: block;
+    clear: both;
+    margin-bottom: 2px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+a {
+    color: #776e65;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+li {
+    text-align: -webkit-match-parent;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-inline-start: 0px;
+    overflow: hidden;
+    background-color: #333;
+    border: 2px solid black;
+    border-radius: 1px;
+    margin-bottom: 10px;
+}
+
+#Options {
+    background-color: #929292;
+    top: 220px;
+    left: 50px;
+    padding: 10px;
+    position: absolute;
+}
+
+.Buton {
+    float: right;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}

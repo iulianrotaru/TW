@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="faviconHearthstone.ico">
+	<link rel="apple-touch-icon" href="meta/apple-touch-icon-hs.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    
+    <title>MakeYourGame</title>
+    
+    <link href="Css/CssMakeYour/style.css" rel="stylesheet" type="text/css">
+
+    <script src="GameEngineMakeYour.js"></script>
+    <script src="JavaScript/JavaScriptMakeYour/VerificareInactivitate.js"></script>
+    <script src="JavaScript/JavaScriptMakeYour/SetBackground.js"></script>
+    <script src="JavaScript/JavaScriptMakeYour/VarstaUtilizator.js"></script>
+    <script src="JavaScript/JavaScriptMakeYour/AparitieTitlu.js"></script>
+    <script src="JavaScript/JavaScriptMakeYour/ListaReverse.js"></script>
+</head>
+
+<body id="Pagina">
+    <header>
+        <div style="background-color:black">
+            <ul>
+                <nav>
+                    <li class="item">
+                        <a href="index.html">Hearthstone2048</a>
+                    </li>
+
+                    <li class="active">
+                        <a href="indexMakeYour.html">MakeYour2048</a>
+                    </li>
+
+                    <li class="item">
+                        <a href="indexListaImagini.html">Images</a>
+                    </li>
+                </nav>
+
+            </ul>
+        </div>
+    </header>
+    <div id = "container">
+        <div class="Spatiu"></div>
+        <div id="heading">
+            <div id="scoresContainer">
+                <div id="scoreContainer"></div>
+                <div id="bestContainer"></div>
+            </div>
+        </div>
+        
+        <div class="Spatiu"></div>
+
+        <div id="aboveGame">
+            <div id="optionContainer">
+                <a id="undoButton">Undo</a>
+                <a id="restartButton">Joc nou</a>
+            </div>
+        </div>
+
+        <div class="Spatiu"></div>
+
+        <div id = "MesajJoc">
+            <p id = "MesajEndGame"></p>
+        </div>
+
+
+        <div id = "Matrix">
+            <div id = "Celula_1_1"><div id = "imagineCelula_1_1"></div></div>
+            <div id = "Celula_1_2"><div id = "imagineCelula_1_2"></div></div>
+            <div id = "Celula_1_3"><div id = "imagineCelula_1_3"></div></div>
+            <div id = "Celula_1_4"><div id = "imagineCelula_1_4"></div></div>
+            <div id = "Celula_1_5"><div id = "imagineCelula_1_5"></div></div>
+            <div id = "Celula_1_6"><div id = "imagineCelula_1_6"></div></div>
+            <div id = "Celula_1_7"><div id = "imagineCelula_1_7"></div></div>
+
+            <div id = "Celula_2_1"><div id = "imagineCelula_2_1"></div></div>
+            <div id = "Celula_2_2"><div id = "imagineCelula_2_2"></div></div>
+            <div id = "Celula_2_3"><div id = "imagineCelula_2_3"></div></div>
+            <div id = "Celula_2_4"><div id = "imagineCelula_2_4"></div></div>
+            <div id = "Celula_2_5"><div id = "imagineCelula_2_5"></div></div>
+            <div id = "Celula_2_6"><div id = "imagineCelula_2_6"></div></div>
+            <div id = "Celula_2_7"><div id = "imagineCelula_2_7"></div></div>
+            
+            <div id = "Celula_3_1"><div id = "imagineCelula_3_1"></div></div>
+            <div id = "Celula_3_2"><div id = "imagineCelula_3_2"></div></div>
+            <div id = "Celula_3_3"><div id = "imagineCelula_3_3"></div></div>
+            <div id = "Celula_3_4"><div id = "imagineCelula_3_4"></div></div>
+            <div id = "Celula_3_5"><div id = "imagineCelula_3_5"></div></div>
+            <div id = "Celula_3_6"><div id = "imagineCelula_3_6"></div></div>
+            <div id = "Celula_3_7"><div id = "imagineCelula_3_7"></div></div>
+
+            <div id = "Celula_4_1"><div id = "imagineCelula_4_1"></div></div>
+            <div id = "Celula_4_2"><div id = "imagineCelula_4_2"></div></div>
+            <div id = "Celula_4_3"><div id = "imagineCelula_4_3"></div></div>
+            <div id = "Celula_4_4"><div id = "imagineCelula_4_4"></div></div>
+            <div id = "Celula_4_5"><div id = "imagineCelula_4_5"></div></div>
+            <div id = "Celula_4_6"><div id = "imagineCelula_4_6"></div></div>
+            <div id = "Celula_4_7"><div id = "imagineCelula_4_7"></div></div>
+
+            <div id = "Celula_5_1"><div id = "imagineCelula_5_1"></div></div>
+            <div id = "Celula_5_2"><div id = "imagineCelula_5_2"></div></div>
+            <div id = "Celula_5_3"><div id = "imagineCelula_5_3"></div></div>
+            <div id = "Celula_5_4"><div id = "imagineCelula_5_4"></div></div>
+            <div id = "Celula_5_5"><div id = "imagineCelula_5_5"></div></div>
+            <div id = "Celula_5_6"><div id = "imagineCelula_5_6"></div></div>
+            <div id = "Celula_5_7"><div id = "imagineCelula_5_7"></div></div>
+
+            <div id = "Celula_6_1"><div id = "imagineCelula_6_1"></div></div>
+            <div id = "Celula_6_2"><div id = "imagineCelula_6_2"></div></div>
+            <div id = "Celula_6_3"><div id = "imagineCelula_6_3"></div></div>
+            <div id = "Celula_6_4"><div id = "imagineCelula_6_4"></div></div>
+            <div id = "Celula_6_5"><div id = "imagineCelula_6_5"></div></div>
+            <div id = "Celula_6_6"><div id = "imagineCelula_6_6"></div></div>
+            <div id = "Celula_6_7"><div id = "imagineCelula_6_7"></div></div>
+
+            <div id = "Celula_7_1"><div id = "imagineCelula_7_1"></div></div>
+            <div id = "Celula_7_2"><div id = "imagineCelula_7_2"></div></div>
+            <div id = "Celula_7_3"><div id = "imagineCelula_7_3"></div></div>
+            <div id = "Celula_7_4"><div id = "imagineCelula_7_4"></div></div>
+            <div id = "Celula_7_5"><div id = "imagineCelula_7_5"></div></div>
+            <div id = "Celula_7_6"><div id = "imagineCelula_7_6"></div></div>
+            <div id = "Celula_7_7"><div id = "imagineCelula_7_7"></div></div>
+        </div>
+
+        <div id = "SeteazaDim">
+            <select id = "SetRow">
+                <option value = "2" >2</option>
+                <option value = "3" >3</option>
+                <option value = "4" >4</option>
+                <option value = "5" >5</option>
+                <option value = "6" >6</option>
+                <option value = "7" >7</option>
+            </select>
+            
+            <select id = "SetCol">
+                <option value = "2" >2</option>
+                <option value = "3" >3</option>
+                <option value = "4" >4</option>
+                <option value = "5" >5</option>
+                <option value = "6" >6</option>
+                <option value = "7" >7</option>
+            </select>
+        
+            <a id="SetDim">Seteaza Dimensiunea</a>
+                    
+        </div>
+    </div>
+
+    <ol id = "Legenda"></ol>
+
+    <div id = "Inactivitate">
+        <output id="mesajTimpInactiv"></output>
+    </div>
+
+    <div id = "Taskuri">
+        <div id = "Explicatii" class = "legend-row">
+            <article>
+                <b>Explicatii</b>
+                <div class="Spatiu"></div>
+                <div>-foloseste sagetile sau traseaza o directie pentru a misca blocurile de imagini din matrice</div>
+                <div>-doua imagini adiacente identice devin una noua avansata</div>
+                <div>-scorul best este scorul maxim pentru fiecare joc individual jucat pentru dimensiunea individuala selectata</div>
+                <div>-prima dimensiune sunt liniile si a doua coloanele la sectiunea de setare a dimensiunii</div>
+                <div>-legenda se updateaza la fiecare miscare astfel: culoarea albastra este scopul jocului, culoare rosie imaginea curenta maxima, iar verde este pentru imaginea maxima</div>
+                <div>-toate informatiile din legenda sunt pentru dimensiunea selectata</div>
+            </article>
+        </div>
+
+        <div id = "SetColor" class = "legend-row">
+            <input type="text" id="searchCuloare" placeholder="Culoare">
+                <output id="mesajCuloare"></output>
+                <div class="Spatiu"></div>
+                <button type="button" id="searchButtonCuloare">Seteaza culoare background</button>
+        </div>
+
+        <div id = "Varsta" class = "legend-row">
+            <input type="text" id="searchVarsta" placeholder="zi#luna#an">
+                <button type="button" id="searchButtonVarsta">Afiseaza varsta</button>
+                <div class="Spatiu"></div>
+                <output id="mesajVarsta"></output>
+        </div>
+
+        <div id = "TimpPetrecut" class = "legend-row">
+                <div id = "timpPetrecut">
+                Timp petrecut pe pagina:
+                <time id="mesajTimpPetrecut"></time>
+                </div>
+        </div>
+
+    </div>
+    
+    <div id = "mesaj"></div>
+
+    <script src="JavaScript/JavaScriptHearthstone/TimpPetrecut.js"></script>
+
+</body>
+
+</html>

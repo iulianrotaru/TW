@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="faviconHearthstone.ico">
+	<link rel="apple-touch-icon" href="meta/apple-touch-icon-hs.png">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+
+	<link href="Css/CssListaImagini/style.css" rel="stylesheet" type="text/css">
+
+	<title>ListaImagini</title>
+
+</head>
+
+<body>
+    <header>
+        <div style="background-color:black">
+            <ul>
+                <nav>
+                    <li class="item">
+                        <a href="index.html">Hearthstone2048</a>
+                    </li>
+
+                    <li class="item">
+                        <a href="indexMakeYour.html">MakeYour2048</a>
+                    </li>
+
+                    <li class="active">
+                        <a href="indexListaImagini.html">Images</a>
+                    </li>
+                </nav>
+				<li class="item">
+                    <a>
+                        <div id = "timpPetrecut">
+                        Timp petrecut pe pagina:
+                        <time id="mesajTimpPetrecut"></time>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </header>
+	
+    <br>
+    <br>
+
+	<p class="tile-legend"> <strong class="important"></strong></p>
+	<div id = "Options">
+		<input type="text" id="searchName1" placeholder="Nume">
+        <input type="text" id="searchName" hidden>
+        <button type="button" id="xButton" hidden>Search</button>
+		<button type="button" id="searchButton">Search</button>
+		<br>
+        <input type="text" name="name" id="formName" placeholder="Nume">
+        <input type="text" name="url" id="formUrl" placeholder="Url imagine">
+        <button type="button" id="addButton">Add</button>
+        <button type="button" id="updateButton" disabled>Update</button>
+    </div>
+
+	<div id='list' class="list"></div>
+
+	<script src="scriptMakeYour.js"></script>
+
+	<script src="JavaScript/JavaScriptHearthstone/TimpPetrecut.js"></script>
+
+</body>
+
+</html>

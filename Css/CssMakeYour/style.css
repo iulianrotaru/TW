@@ -1,0 +1,343 @@
+#Matrix {
+    width: 440px;
+    height: 440px;
+    position: absolute;
+    background: #bbada0;
+    border-color: #e56868;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    display: block;
+}
+
+#container {
+    top : 70px;
+    height: 630px;
+    position: absolute;
+    border-radius: 12px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #929292;
+}
+
+#Taskuri {
+    top: 70px;
+    padding: 5px 5px;
+    position: absolute;
+    border-radius: 12px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #929292;
+}
+
+#Legenda {
+    top : 70px;
+    position: absolute;
+    border-radius: 12px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #929292;
+    display: block;
+}
+
+#heading:after, #aboveGame:after , #Matrix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#scoresContainer, #optionContainer {
+    float: right;
+    text-align: center;
+}
+
+#scoreContainer, #bestContainer {
+    position: relative;
+    display: inline-block;
+    background: #bbada0;
+    padding: 15px 25px;
+    font-size: 25px;
+    height: 25px;
+    line-height: 47px;
+    font-weight: bold;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    right : 10px;
+
+    border-color: #58857f;
+    border-style: solid;
+    border-width: 1px;
+    
+}
+
+#scoreContainer:after, #bestContainer:after {
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    left: 0;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 13px;
+    text-align: center;
+    color: #eee4da;
+}
+
+#scoreContainer:after {
+    content: "Score";
+}
+
+#bestContainer:after {
+    content: "Best";
+}
+
+a {
+    color: #776e65;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+#undoButton , #restartButton{
+    position: relative;
+    display: inline-block;
+    background: #bbada0;
+    padding: 5px 10px;
+    font-size: 20px;
+    height: 25px;
+    line-height: 25px;
+    font-weight: bold;
+    border-radius: 3px;
+    color: white;
+    z-index: 1;
+    right : 10px;
+
+    border-color: #707eb2;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#MesajEndGame {
+    font-size: 0px;
+}
+
+#MesajJoc {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin-bottom: 10px;
+    line-height: 1.65;
+    font-weight: bold;
+}
+
+#SeteazaDim {
+    top : 583px;
+    width : 440px;
+    height: 20px;
+    position: absolute;
+    content: "";
+    display: block;
+    clear: both;
+    border : 0px;
+}
+
+#SetRow , #SetCol , #SetDim {
+    position: relative;
+    display: inline-block;
+    background: #bbada0;
+    border-radius: 3px;
+
+    border-color: #c074b3;
+    border-style: solid;
+    border-width: 1px;
+
+    left : 100px;
+    top : 13px;
+}
+
+#SetDim {
+    color : black;
+    height : 18.8px;
+    font-weight: normal;
+}
+
+.Spatiu {
+    height: 10px;
+}
+
+.legend-row {
+    padding: 10px 10px;
+    background: #bbada0;
+    border-radius: 7px;
+
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.legend-row:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+ol {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-inline-start: 5px;
+}
+
+/* bara de sus */
+header {
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    position: absolute;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-inline-start: 0px;
+    overflow: hidden;
+    background-color: #333;
+    border: 2px solid black;
+    border-radius: 1px;
+    margin-bottom: 10px;
+}
+  
+li {
+    border-right: 2px solid black;
+    float: left;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li.item {
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.active {
+    font-weight: bold;
+    background-color: #595959;
+}
+/* bara de sus */
+  
+  
+ol {
+    list-style-type: none;
+}
+  
+.lista {
+    border-right: none;
+    margin-top: 5px;
+}
+
+.lista:after {
+    content: "";
+    display: block;
+    clear: both;
+    margin-bottom: 2px;
+}
+
+
+#Inactivitate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background: url(Background/2048.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+#mesajTimpInactiv {
+    font-size: 40px;
+}
+
+
+@media screen and (max-width: 768px) {
+    #container {
+        top: 710px;
+        left: 10px;
+        width: 442px;
+    }
+    
+    #Taskuri {
+        top: 170px;
+        left: 10px;
+        width: 350px;
+    }
+    
+    #Legenda {
+        top: 1410px;
+        left : 10px;
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+
+    #container {
+        top: 650px;
+        left: 10px;
+        width: 442px;
+    }
+    
+    #Taskuri {
+        top: 80px;
+        left: 10px;
+        width: 350px;
+    }
+    
+    #Legenda {
+        top: 650px;
+        left : 460px;
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    /* top: 70px*/
+    #container {
+        left: 500px;
+        width: 442px;
+    }
+    
+    #Taskuri {
+        left: 50px;
+        width: 350px;
+    }
+    
+    #Legenda {
+        left : 1020px;
+        width: 250px;
+    }
+}
